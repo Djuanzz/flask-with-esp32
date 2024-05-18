@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimouse</title>
+    <!-- <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="../static/img/minimouselight.png" /> -->
+
+    <!-- CSS -->
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='./css/style.css')}}" />
+
+    <!-- FONTS POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno:wght@200;300;400;500;600;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      class="navbar bg-dark border-bottom border-body mb-5"
+      data-bs-theme="dark">
+      <div class="container">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="../static/img/minimouselight.png" alt="minimouse" />
+          </a>
+          <a class="navbar-brand fs-2 fw-bold" href="/">Minimouse</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="containernya">
+      <div class="board">
+        <!-- <div class="content">1</div> -->
+      </div>
+
+      <div class="">
+        <div class="menu-bar" style="margin-bottom: 20px">
+          <input
+            type="text"
+            class="menu"
+            id="inputField"
+            style="text-align: center" />
+
+          <div class="menu ubah">Change</div>
+        </div>
+        <div class="menu-bar">
+          <div class="menu random">Random</div>
+          <div class="menu reset">Reset</div>
+          <div class="menu run">Run</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="{{ url_for('static', filename='./js/script.js') }}"
+      type="text/javascript"></script>
+  </body>
+</html>
